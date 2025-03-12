@@ -49,6 +49,11 @@
 
       <form id="signupForm">
         <div class="form-group">
+          <label for="signupUsername">Username</label>
+          <input type="text" id="signupUsername" required />
+        </div>
+
+        <div class="form-group">
           <label for="signupEmail">Email</label>
           <input type="email" id="signupEmail" required />
         </div>
@@ -56,11 +61,6 @@
         <div class="form-group">
           <label for="signupPassword">Password</label>
           <input type="password" id="signupPassword" required />
-        </div>
-
-        <div class="form-group">
-          <label for="confirmPassword">Confirm Password</label>
-          <input type="password" id="confirmPassword" required />
         </div>
 
         <button type="submit" class="btn btn-primary">Sign Up</button>
@@ -76,14 +76,6 @@
       </div>
     </div>
 
-    <script>
-      function toggleForms() {
-        const loginContainer = document.getElementById("loginContainer");
-        const signupContainer = document.getElementById("signupContainer");
-
-        loginContainer.classList.toggle("hidden");
-        signupContainer.classList.toggle("hidden");
-      }
-    </script>
+    <script src="js/index.js"></script>
   </body>
 </html>
